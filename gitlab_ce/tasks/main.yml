@@ -11,12 +11,12 @@
 
 - name: Add GitLab repository key
   apt_key:
-    url: https://packages.gitlab.com/gitlab/gitlab-ce/gpgkey
+    url: "{{ Keylink }}"
     state: present
 
 - name: Add GitLab repository
   apt_repository:
-    repo: "deb [arch=amd64] https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ {{ ansible_lsb.codename }} main"
+    repo: "{{ repo_link }}"
     state: present
     filename: gitlab
 
