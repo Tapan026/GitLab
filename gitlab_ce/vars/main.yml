@@ -1,3 +1,5 @@
 ---
+Keylink: "https://packages.gitlab.com/gitlab/gitlab-ce/gpgkey"
+repo_link: "deb [arch=amd64] https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ {{ ansible_lsb.codename }} main"
 external_url: "http://54.211.93.162"
 gitlab_root_password: "pass@1234"
